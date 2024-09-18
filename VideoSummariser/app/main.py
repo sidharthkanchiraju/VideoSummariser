@@ -16,8 +16,6 @@ r = sr.Recognizer()
 with sr.AudioFile(os.path.join(os.path.dirname(os.path.dirname(__file__)), 'audio.wav')) as file:
     audio = r.record(file)
 
-print("Hello")
-
 recognized_text = ""
 try:
     # for testing purposes, we're just using the default API key
